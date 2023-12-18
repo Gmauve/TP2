@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nagy_TP2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logoHollowKnight.png" alt="Logo_Hollow_Knight">
+        <h1>La musique de Christopher Larkin - son travail sur Hollow Knight</h1>
+    </header>
+    <nav>
+        <a href="#acceuil">Acceuil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#article">Article</a>
+        <a href="#video">Vidéo</a>
+        <a href="#galerie">Galerie</a>
+    </nav>
+    <section id="acceuil">
+        <div id="acceuil-boite1">
+            <h2>Acceuil</h2>
+            <div class="boite-fermee">
+                <p>• TP2</p>
+                <p>• Appréciation des compositions de Christopher Larkin</p>
+                <p>• Guillaume Nagy</p>
+                <p>• 582-1W1 — Mise en page Web</p>
+                <p>• Technique d'Intégration Multimédia</p>
+                <p>• Collège de Maisonneuve</p>
+                <p>• </p>
+                <p>• Automne 2023</p>
+            </div>
+        </div>
+        <div id="acceuil-boite2">
+            <img src="images/teamCherryLogo.webp" alt="Logo_Team_Cherry">
+            <p>Christopher Larkin, talentueux compositeur, travaillant entre autres sur l'atmosphère sonore de jeux vidéo, est une véritable inspiration par la complexité de ses œuvres. Celles que j'apprécie particulièrement proviennent du jeu Hollow Knight, de Team Cherry.</p>
+        </div>
+    </section>
+    <form action="traiter_form.php" id="inscription">
+        <h2>Formulaire d'inscription à un groupe discord sur la musique de Hollow Knight</h2>
+        <div id="boitePrincipaleInscription" class="boite-fermee">
+            <fieldset>
+                <label for="pseudo">Entrez votre pseudo</label>
+                <input type="text" id="pseudo" name="pseudo"> <br> <br>
+
+                <p>Zone(s) préférée(s)</p>
+                <div id="zonesPref">
+                    <div>
+                        <input type="checkbox" id="zones" name="zones" value="dirthmouth">
+                        <label for="dirthmouth">Dirthmouth</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="crossroads">
+                        <label for="crossroads">Forgotten Crossroads</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="greenpath">
+                        <label for="greenpath">Greenpath</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="fog">
+                        <label for="fog">Fog Canyon</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="fungal">
+                        <label for="fungal">Fungal Wastes</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="crystal">
+                        <label for="crystal">Crystal Peak</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="tears">
+                        <label for="tears">City of Tears</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="waterways">
+                        <label for="waterways">Royal Waterways</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="cliffs">
+                        <label for="cliffs">Howling Cliffs</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="rest">
+                        <label for="rest">Resting Grounds</label> <br>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="zones" name="zones" value="garden">
+                        <label for="garden">Queen's Gardens</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="edge">
+                        <label for="edge">Kindom's Edge</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="colosseum">
+                        <label for="colosseum">Colosseum of Fools</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="bassin">
+                        <label for="bassin">Ancient Bassin</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="nest">
+                        <label for="nest">Deepnest</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="hive">
+                        <label for="hive">The Hive</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="abyss">
+                        <label for="abyss">The Abyss</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="palace">
+                        <label for="palace">White Palace</label> <br>
+                        <input type="checkbox" id="zones" name="zones" value="godhome">
+                        <label for="godhome">Godhome</label> <br>
+                    </div>
+                </div> <br>
+
+                <p>Choisi un des éléments suivants</p>
+                <input type="radio" id="element" name="element" value="lifeblood">
+                <label for="element">Lifeblood</label> <br>
+                <input type="radio" id="element" name="element" value="void">
+                <label for="element">Void</label> <br>
+                <input type="radio" id="element" name="element" value="god">
+                <label for="element">God</label> <br>
+                <input type="radio" id="element" name="element" value="dreams">
+                <label for="element">Dreams</label> <br>
+                <input type="radio" id="element" name="element" value="nightmares">
+                <label for="element">Nightmares</label> <br> <br>
+
+                <label for="prefere">Personnage préféré</label>
+                <select name="prefere" id="prefere">
+                    <option value="the_knight">The Knight</option>
+                    <option value="hornet">Hornet</option>
+                    <option value="hollow_Knight">The Hollow Knight</option>
+                    <option value="grimm">Grimm</option>
+                    <option value="brumm">Brumm</option>
+                    <option value="divine">Divine</option>
+                    <option value="oro">Oro</option>
+                    <option value="mato">Mato</option>
+                    <option value="sheo">Sheo</option>
+                    <option value="sly">Sly</option>
+                    <option value="elderbug">Elderbug</option>
+                    <option value="quirrel">Quirrel</option>
+                    <option value="iselda">Iselda</option>
+                    <option value="cornifer">Cornifer</option>
+                    <option value="nailsmith">Nailsmith</option>
+                    <option value="zote">Zote</option>
+                    <option value="tiso">Tiso</option>
+                    <option value="the_hunter">The Hunter</option>
+                </select> <br> <br>
+                
+                <p>Note / Commentaire</p>
+                <textarea name="note" cols="40" rows="6"></textarea> <br> <br>
+                <input type="submit" id="bouton_submit" value="Soumettre">
+            </fieldset>
+        </div>
+    </form>
+    <div id="tableau">
+        <h2>Tableau d'opinion subjective</h2>
+        <table>
+            <caption>Classement personnel des musiques de Hollow Knight selon mes préférences:</caption>
+            <tr>
+                <th>Titre</th>
+                <th>Classement</th>
+                <th>Lieu / moment de la première occurence</th>
+                <th>Durée</th>
+            </tr>
+            <tr>
+                <td>Greenpath</td>
+                <td>1</td>
+                <td>Entendue lors de la première entrée dans "Greenpath"</td>
+                <td>3:37</td>
+            </tr>
+            <tr>
+                <td>Enter Hallownest</td>
+                <td>2</td>
+                <td>Entendue au début du jeu</td>
+                <td>1:29</td>
+            </tr>
+            <tr>
+                <td>Truth, Beauty and Hatred</td>
+                <td>3</td>
+                <td>Entendue lors d'un combat de rêve dans "Dirthmouth"</td>
+                <td>1:58</td>
+            </tr>
+            <tr>
+                <td>Mantis Lords</td>
+                <td>4</td>
+                <td>Entendue lors du combat de boss du "Mantis Village"</td>
+                <td>1:45</td>
+            </tr>
+            <tr>
+                <td>Sealed Vessel</td>
+                <td>5</td>
+                <td>Entendue lors du combat de boss final dans le "Temple of the Black Egg"</td>
+                <td>5:45</td>
+            </tr>
+        </table>
+    </div>
+    <article id="article">
+        <div id="colonne1">
+            <h2>Article d'appréciation</h2>
+            <p>Christopher Larkin, tout un artiste, a un style de musique que j'aime définitivement, parfois plus classique, parfois avec un but d'ambiance qui se ressent vraiment.</p>
+            <img src="images/The_Knight_Idle.png" alt="The_Knight">
+        </div>
+        <div id="colonne2">
+            <img src="images/Hornet_Idle.png" alt="Hornet">
+            <h3>Source d'inspiration</h3>
+            <p>Il ne cesse d'être inspirant puisqu'il garde une qualité si constante à son travail. Plus impressionnant encore, pour la suite de Hollow Knight, un réel orchestre joue ses compositions! Cet artiste a fait beaucoup d'études et cela se remarque clairement dans ce qu'il présente au monde.</p>
+        </div>
+    </article>
+    <div id="video">
+        <h2>Vidéo</h2>
+        <h3>Le prochain jeu, Hollow Knight: Silksong, devrait, avec un peu d'espoir, sortir dans un futur proche</h3>
+        <div id="boiteVideo" class="boite-fermee">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yQxwbZsL14Y?si=mGvWoktLq1LslzoX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div id="boiteTexteVideo" class="boite-fermee">
+            <p>Un jeu attendu depuis quelques années maintenant qui semble plein de promesses!</p>
+        </div>
+    </div>
+    <div id="galerie">
+        <h2>Galerie</h2>
+        <img src="images/openingHK.jpg" alt="Hollow_Knight_Opening">
+        <img src="images/mapArtworkHK.jpg" alt="Hollow_Knight_Map">
+        <img src="images/screenshot_HK_City_of_Tears.png" alt="Hollow_Knight_City_of_Tears_Foutain">
+        <img src="images/screenshot_HK_Dreamers.png" alt="Hollow_Knight_Dreamers">
+        <img src="images/screenshot_HK_Abyss_Lifeblood.png" alt="Hollow_Knight_Lifeblood">
+        <img src="images/screenshot_HK_The_Hunter.png" alt="Hollow_Knight_Hunter">
+        <img src="images/screenshot_HK_Greenpath_Lake.png" alt="Hollow_Knight_Lake_of_Unn">
+        <img src="images/screenshot_HK_Aluba_Garden.png" alt="Hollow_Knight_Queen's_Gardens">
+        <img src="images/screenshot_HK_Grimmsteed.png" alt="Hollow_Knight_Grimm_Troupe">
+        <img src="images/screenshot_HK_Howling_Cliffs.png" alt="Hollow_Knight_Grimm_Lantern">
+        <img src="images/screenshot_HK_Kingdom's_Edge_QuickSlash.png" alt="Hollow_Knight_QuickSlash_Charm">
+        <img src="images/screenshot_HK_The_Pale_King.png" alt="Hollow_Knight_Pale_King">
+    </div>
+    <footer>
+        <p>Adresse du Collège de Maisonneuve: 3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
+        <a href="https://composerlarkin.com/">Page web de Christopher Larkin</a>
+        <p>Département d'Intégration Multimédia</p>
+        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#">Avis de confidentialité | Privacy notice</a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

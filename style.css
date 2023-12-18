@@ -269,6 +269,7 @@ tr:nth-child(odd) td {
 
 /*Mise en forme du footer*/
 footer {
+    margin-bottom: 32px;
     text-align: center;
 }
 
